@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<title></title>
+<body>
+<!-- <canvas>hello world</canvas> -->
+<script type="text/javascript">
+renderCanvas() // 调用canvas函数
+function renderCanvas(){
+	var canvas = document.createElement('canvas'), // 创建CANVAS
+    cxt = canvas.getContext("2d"); // 初始化CANVAS绘制方法
+    return canvas.width = 250, // 设置canvas宽度
+    canvas.height=250, // 设置canvas高度
+    cxt.fillStyle="#FF0000",// 设置canvas填充颜色
+    cxt.fillRect(0,0,150,75),// 绘制一个可填充的矩形实例
+    document.body.append(canvas)// 添加到DOM文档（body）
+}
+</script>
+</body>
+</html>
