@@ -1,0 +1,17 @@
+<body>
+    <canvas id="canvas" width="400" height="300"></canvas>
+    
+    <script>
+    var canvas=document.getElementById("canvas");
+    if(canvas.getContext)
+    {
+        var context=canvas.getContext("2d");
+        context.beginPath();
+        context.moveTo(30,30);
+        context.lineTo(200,200);
+        context.closePath();
+        context.strokeStyle="red";
+        context.stroke();      
+    }
+    </script>
+</body>
